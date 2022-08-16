@@ -1,7 +1,6 @@
 import Header from "./Header/Header"
 
 const Vote = () => {
-
   return (
     <div>
       <Header></Header>
