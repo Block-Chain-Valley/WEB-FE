@@ -1,8 +1,10 @@
+import Header from "./Header/Header"
+
 const Vote = () => {
 
   return (
     <div>
-      Vote page
+      <Header></Header>
     </div>
   )
 };
