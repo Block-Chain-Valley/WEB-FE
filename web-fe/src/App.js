@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Main from './components/Main';
-import Vote from './components/Vote';
+import Vote from './components/Voting/Vote';
 
 function App() {
   const [showVotePage, setShowVotePage] = useState(false);
