@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Main from './components/Main';
+import Vote from './components/Vote';
 
 function App() {
+  const [showVotePage, setShowVotePage] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Main />
+
+      {/* Vote Page, 아직 메인에 들어갈지 해더에 들어갈지 안정했기 때문에 일단 App에 넣어두었음 */}
+      {showVotePage ? <Vote /> : <button onClick={ () => { setShowVotePage(true) } }>Vote</button>}
     </div>
   );
 }
