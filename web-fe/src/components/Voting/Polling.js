@@ -1,5 +1,9 @@
+import Header from "./Header/Header";
+
 export default function Polling(){
     return(
-        <div></div>
+        <div>
+            <Header></Header>
+        </div>
     )
 }
