@@ -1,7 +1,7 @@
 [
     {
         "name" : "mainnet",
-        "imgURL": "img/BV_Logo.svg",
+        "imgURL": "/img/BV_Logo.svg",
         "buttonTitle" : "mainnet"
     },
     {
@@ -11,7 +11,7 @@
     },
     {
         "name" : "etc",
-        "imgURL": "img/etc.png",
+        "imgURL": "/img/etc.png",
         "buttonTitle" : ""
     }
 ]

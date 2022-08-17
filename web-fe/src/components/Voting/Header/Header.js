@@ -7,12 +7,12 @@ import dataWalletbutton from'./dataWalletbutton.json'
 
 export default function Header(){
     
-    let [toggle,setToggle] = useState(false);
+    let [toggle,setToggle] = useState(true);
 
     return(
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Link className={styles.Link} to='/voting'><img className={styles.headerlogo} src='img/BV_Logo.svg'/></Link>
+                <Link className={styles.Link} to='/voting'><img className={styles.headerlogo} src={`${process.env.PUBLIC_URL}/img/BV_Logo.svg`}/></Link>
                 {   
                     toggle
                     ?<ul className={styles.ul}>
@@ -30,7 +30,7 @@ export default function Header(){
                     <div className={styles.walletbuttoncontainer}>
                     {
                         dataWalletbutton.map((item,index)=>{
-                            return(<Walletbutton imgURL={item.imgURL} buttonTitle={item.buttonTitle} className={styles.walletbutton}></Walletbutton>)
+                            return(<Walletbutton imgURL={`${process.env.PUBLIC_URL}${item.imgURL}`} buttonTitle={item.buttonTitle} className={styles.walletbutton}></Walletbutton>)
                         })
                     }
                     </div>
@@ -40,7 +40,7 @@ export default function Header(){
             
             
             <a className={styles.toggleBtn} href='#' onClick={()=>{setToggle(!toggle);}}>
-                <img className={styles.toggleImg} src='img/hamburger.png'></img>
+                <img className={styles.toggleImg} src={`${process.env.PUBLIC_URL}/img/hamburger.png`}></img>
             </a>
         </header>
     )
