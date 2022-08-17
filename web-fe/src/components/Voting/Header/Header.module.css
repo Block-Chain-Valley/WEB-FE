@@ -1,4 +1,106 @@
 .header{
     display: flex;
+    justify-content: space-between;
+    height: 3em;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5px 0;
+    border-bottom: 0.5px solid gray;
+}
+.headerlogo{
+    width: 1.7em;
+}
+
+.Link{
+    text-decoration: none;
+    color: black;
+}
+
+.Link:hover{
+    color: blue;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.li{
+    padding: 0 20px;
+}
+
+
+.walletbuttoncontainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+}
+.walletbuttoncontainer > button{
+    margin: 0 10px;
+}
+
+.toggleBtn{
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+
+}
+
+.toggleImg{
+    width: 1.2em;
+}
+
+.active{
+    display: flex;
+}
+
+
+@media screen and (max-width:720px) {
     
+    .header,.ul, .nav{
+        flex-direction: column;
+    }
+
+    .header{
+        height: auto;
+        
+    }
+
+    .Link{
+        margin-right: auto;
+    }
+
+    .nav{
+        width: 100%;
+        align-items: center;
+    }
+
+    .ul{
+        width: 100%;
+    }
+
+    .li{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .toggleBtn{
+        display: block;
+    }
+
+
 }

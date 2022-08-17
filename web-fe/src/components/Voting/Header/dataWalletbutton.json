@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "mainnet",
+        "imgURL": "img/BV_Logo.svg",
+        "buttonTitle" : "mainnet"
+    },
+    {
+        "name" : "mainnet",
+        "imgURL": "",
+        "buttonTitle" : "Connect Wallet"
+    },
+    {
+        "name" : "etc",
+        "imgURL": "img/etc.png",
+        "buttonTitle" : ""
+    }
+]
+
