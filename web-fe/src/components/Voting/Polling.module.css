@@ -4,3 +4,8 @@
     
     
 }
+
+.filter{
+    display: inline-block;
+    width: max-content;
+}
