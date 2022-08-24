@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import Walletbutton from '../Walletbutton/Walletbutton';
+import ConnectWalletbutton from '../ConnectWalletbutton/ConnectWalletbutton';
 import dataWalletbutton from'./dataWalletbutton.json'
 
-export default function Header(){
+export default function Header(props){
     
-    let [toggle,setToggle] = useState(true);
+    const [toggle,setToggle] = useState(true);
 
     return(
         <header className={styles.header}>
@@ -28,11 +28,9 @@ export default function Header(){
                 toggle
                 ?
                     <div className={styles.walletbuttoncontainer}>
-                    {
-                        dataWalletbutton.map((item,index)=>{
-                            return(<Walletbutton imgURL={`${process.env.PUBLIC_URL}${item.imgURL}`} buttonTitle={item.buttonTitle} className={styles.walletbutton}></Walletbutton>)
-                        })
-                    }
+                    <ConnectWalletbutton></ConnectWalletbutton>
+                        
+                    
                     </div>
                 :
                     null

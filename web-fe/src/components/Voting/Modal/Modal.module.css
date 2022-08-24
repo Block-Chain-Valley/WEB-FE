@@ -1,0 +1,41 @@
+
+.modalbox{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    overflow-y: hidden;
+}
+
+
+.modal{
+    margin: 20vh auto;
+    padding: 2em;
+    width: 450px;
+    height: 300px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 33%) 0px 10px 50px;
+    
+}
+
+.modaltop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walletlist{
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

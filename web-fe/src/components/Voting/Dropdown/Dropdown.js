@@ -6,16 +6,19 @@ const Dropdown = (props) =>{
     const [repeat,setRepeat] = useState(null);
     const dd = useRef();
 
-    const handlClickOutside= event =>{
-        if( props.isVisible && !dd.current.contains(event.target)) props.setDropdownToggle(false);
-    }
+    // const handlClickOutside= event =>{
+    //     if( props.isVisible && !dd.current.contains(event.target)) props.setDropdownToggle(false);
+    // }
 
-    useEffect(()=>{
-        window.addEventListener('click',handlClickOutside);
-        return ()=>{
-            window.removeEventListener('click', handlClickOutside);
-        };
-    },[])
+    // useEffect(()=>{
+    //     window.addEventListener('mousedown',handlClickOutside);
+    //     console.log(dd)
+    //     return ()=>{
+    //         window.removeEventListener('mousedown', handlClickOutside);
+    //         console.log(dd);
+    //     };
+    // },[props.isVisible]);
+
     useEffect(()=>{
         if(props.isVisible){
             clearTimeout(repeat);
