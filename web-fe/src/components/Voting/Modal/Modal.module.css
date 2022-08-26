@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 100;
     overflow-y: hidden;
+    cursor: default;
 }
 
 
@@ -27,10 +28,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.modaltop > img{
+    width: 1em;
+    cursor: pointer;
 }
 
 .walletlist{
     box-sizing: border-box;
+    margin-top: 5px;
     padding: 16px;
     width: 100%;
     border: 0.5px solid gray;
@@ -38,4 +46,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor:pointer;
 }
+.walletlist:hover{
+    background-color: #eee;
+}
+.walletlist > img{
+    width: 1em;
+}
+.walletlist > span{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
